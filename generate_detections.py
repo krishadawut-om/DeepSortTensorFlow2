@@ -5,6 +5,8 @@ import argparse
 import numpy as np
 import cv2
 import tensorflow.compat.v1 as tf
+
+tf.logging.set_verbosity(tf.logging.ERROR)
     
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
 if len(physical_devices) > 0:
